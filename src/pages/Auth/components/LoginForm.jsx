@@ -7,8 +7,7 @@ import Picture from "./Picture";
 import Password from "./Password";
 import { gapi } from "gapi-script";
 
-const clientId =
-  "430143914989-klv7cn8a8pt0fk39pi1elcv1c9ekclq2.apps.googleusercontent.com";
+const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID
 
 const LogInForm = () => {
   const [isLoading, setIsLoading] = useState(false);
